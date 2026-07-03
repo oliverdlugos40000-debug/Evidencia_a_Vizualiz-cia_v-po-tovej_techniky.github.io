@@ -1,0 +1,277 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eaf4ff, #f4f6f8);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ====== HLAVIČKA ====== */
+header {
+    position: relative;
+    text-align: center;
+    padding: 30px 20px 10px;
+    background-color: #0055a5;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #cce0f5;
+}
+
+/* ====== FILTER SEKCIa ====== */
+.filter-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 1200px; /* 🔹 Rozšírené */
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.filter-box form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.filter-box label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.filter-box input,
+.filter-box select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 180px; /* 🔹 Mierne rozšírené polia */
+}
+
+.filter-box button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #0072ce;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 42px;
+    align-self: flex-end;
+}
+
+.filter-box button:hover {
+    background-color: #0055a5;
+}
+
+/* ====== INFO TEXT ====== */
+.login-info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* ====== IFRAME KONTAJNER ====== */
+.iframe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+iframe.data-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f0f2f5;
+    border-top: 1px solid #ddd;
+}
+
+/* ====== LOGIN STRÁNKA ====== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0072ce;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #0055a5;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* ====== ADMIN PANEL ====== */
+.admin-panel {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.add-form input,
+.add-form button {
+    margin: 5px;
+}
+
+.logout-btn {
+    color: white;
+    background: #d9534f;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background: #c9302c;
+}
+
+/* ====== ADMIN TLAČIDLO ====== */
+.admin-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #0072ce;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #0055a5;
+}
+
+/* ODKAZ NA VIZUALIZÁCIU */
+.visual-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+.visual-btn:hover {
+    background-color: #218838;
+}
+
+/* ====== ADMIN PANEL V HLAVIČKE ====== */
+.admin-panel-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logged-info {
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.admin-panel-header .admin-btn {
+    position: static;
+    background-color: #0072ce;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-panel-header .admin-btn:hover {
+    background-color: #0055a5;
+}
+
+
+/* TLAČIDLO EXPORT CSV */
+.add-btn {
+    text-decoration: none;
+    background-color: #0072ce;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-right: 8px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-btn:hover {
+    background-color: #0055a5;
+}
